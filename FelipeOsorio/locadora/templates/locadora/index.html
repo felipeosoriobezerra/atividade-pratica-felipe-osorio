@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>index</title>
+</head>
+
+<style>
+
+body{
+        margin-left: 500px;
+        margin-top: 50px;
+}
+
+a {
+            margin: 10px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+}
+
+table{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+</style>
+
+<body>
+
+<h1>Felipe Osório Bezerra</h1>
+
+<table>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <a href="{% url 'filmes' %}" class="btn btn-primary">Filmes</a>
+                    </td>
+                    <td>
+                        <a href="{% url 'locacao' %}" class="btn btn-primary">Locações</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Lista-Filmes</title>
+</head>
+<style>
+    body{
+        margin-left: 600px;
+    }
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+    <h2>Lista de Filmes</h2>
+    {% for filme in filmes %}
+                <ul>
+                    <li>Título: {{ filme.nome }} </li>
+                    <li>Valor: {{ filme.valor }}</li>
+                    <li>Cliente: {{ filme.categoria.nome }}</li>
+                </ul>
+        {% endfor %}
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
